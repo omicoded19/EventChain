@@ -1,5 +1,5 @@
 # This is the template for contributors!
 
-Github: Your_github_user_name
+Github: bitflipper19
 College: IIIT Allahabad
 Figma: <figma_link>
