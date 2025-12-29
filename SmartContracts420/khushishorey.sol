@@ -1,8 +1,10 @@
-// SPDX-License-Identifier: MIT   //License to avoid compiler warnings
+// SPDX-License-Identifier: MIT
+
+//License to avoid compiler warnings
 pragma solidity ^0.8.0;           //similar to like #include<stdio.h> but haan not exactly
 
 contract SimpleNFT {              // this creates a NFT(which is basically a unique id having unique owner or address)
-                                  now to create a nft, we use 2 mappings, one from token to owner and other from owner to balance
+                                  // now to create a nft, we use 2 mappings, one from token to owner and other from owner to balance
 
     mapping(uint256 => address) private owners;   //this means falana token is owned by  dhikana owner/add
     mapping(address => uint256) private balances; //this tells ki ek owner ke pass kitne tokens h
