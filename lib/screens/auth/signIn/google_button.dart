@@ -1,5 +1,6 @@
-import 'package:eventchain/utils/size_utils.dart';
+import 'package:eventchain/utils/ui_helper.dart';
 import 'package:flutter/material.dart';
+import '../../../utils/size_utils.dart';
 
 class GoogleButton extends StatelessWidget {
   const GoogleButton({super.key});
@@ -7,29 +8,31 @@ class GoogleButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      height: SizeUtils.height(context, 0.065),
+      height: SizeUtils.height(context, 0.06),
       width: SizeUtils.width(context, 0.7),
-      child: MaterialButton(
-        onPressed: () {},
-        color: Colors.white,
-        elevation: 2,
-        padding: EdgeInsets.symmetric(vertical: 15),
-        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8)),
+      child: OutlinedButton(
+        style: OutlinedButton.styleFrom(
+          side: BorderSide(color: Color(0x2F000000), width: 1),
+          backgroundColor: Colors.white,
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadiusGeometry.circular(
+              SizeUtils.height(context, 0.01),
+            ),
+          ),
+        ),
+        onPressed: () {
+          print("Button Pressed!");
+        },
         child: Row(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Image.asset(
-              "assets/images/googleLogo.png",
-              height: SizeUtils.height(context, 0.1),
-            ),
-            SizedBox(width: SizeUtils.width(context, 0.1)),
-            Text(
-              'Continue with Google',
-              style: TextStyle(
-                color: Colors.black,
-                fontSize: SizeUtils.height(context, 0.01),
-                fontWeight: FontWeight.bold,
-              ),
+            Image.asset("assets/images/googleLogo.png", height: 20, width: 20),
+            SizedBox(width: 30),
+            UiHelper.customText(
+              text: "Continue with Google",
+              textColor: 0xFF0A0A0A,
+              fontWeight: FontWeight.w500,
+              fontSize: 13,
             ),
           ],
         ),
@@ -37,3 +40,5 @@ class GoogleButton extends StatelessWidget {
     );
   }
 }
+
+// I'll revert here :p

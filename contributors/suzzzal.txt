@@ -1,2 +1,4 @@
 Github: suzzzal
 College: NIT Raipur
+
+(Sign up screen) Issue #116 :- https://www.figma.com/design/S9qCclwuEkcX20MvGIStTu/Untitled?node-id=0-1&t=kAWhyJKPCCM0UfrB-1

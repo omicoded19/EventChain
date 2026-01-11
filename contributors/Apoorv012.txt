@@ -1,2 +1,4 @@
 Github: Apoorv012
 College: Jaypee Institute of Information Technology
+
+Issue #116: https://www.figma.com/design/eU4StOnUrI4UK7B2dp66go/Event-Chain-Sign-Up-Screen?node-id=0-1&t=2f4gqesftD4I85dL-1
